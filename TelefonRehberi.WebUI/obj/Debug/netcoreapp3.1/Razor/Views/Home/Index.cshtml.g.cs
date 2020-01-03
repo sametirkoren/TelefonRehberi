@@ -21,20 +21,13 @@ using TelefonRehberi.WebUI;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\Views\_ViewImports.cshtml"
-using TelefonRehberi.WebUI.Models;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 3 "C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\Views\_ViewImports.cshtml"
 using TelefonRehberi.Entity;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8b8c112014d839119131888fd2945d8afa16a564", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2574196c9f3a03f33f91557df87e1280032f60fa", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4e3aca4b09811d6d9b129bb6bc2afad2086d7407", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Calisan>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-primary btn-sm"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -137,7 +130,7 @@ using TelefonRehberi.Entity;
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n                                        <td>\r\n                                            \r\n                                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8b8c112014d839119131888fd2945d8afa16a5647449", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8b8c112014d839119131888fd2945d8afa16a5647224", async() => {
                 WriteLiteral("Detay");
             }
             );

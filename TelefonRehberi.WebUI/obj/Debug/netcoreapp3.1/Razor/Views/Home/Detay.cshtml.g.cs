@@ -21,20 +21,13 @@ using TelefonRehberi.WebUI;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\Views\_ViewImports.cshtml"
-using TelefonRehberi.WebUI.Models;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 3 "C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\Views\_ViewImports.cshtml"
 using TelefonRehberi.Entity;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"40aac14ae4ba03d05cc07d15ca8feac7bbea33b0", @"/Views/Home/Detay.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2574196c9f3a03f33f91557df87e1280032f60fa", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4e3aca4b09811d6d9b129bb6bc2afad2086d7407", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Detay : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Calisan>
     {
         #pragma warning disable 1998

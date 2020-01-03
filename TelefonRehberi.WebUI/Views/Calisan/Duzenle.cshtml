@@ -1,0 +1,48 @@
+﻿@model Calisan
+@{
+    ViewData["Title"] = "Duzenle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Çalışan Düzenle</h2>
+
+<div class="form">
+    <form class="form-validate form-horizontal" id="feedback_form" method="post" action="/Calisan/Duzenle/" enctype="multipart/form-data">
+        <div class="form-group ">
+            <input type="hidden" asp-for="CalisanId"/>
+            <label for="CalisanAdi" class="control-label col-lg-2">Çalışan Adı <span class="required">*</span></label>
+            <div class="col-lg-10">
+                <input class="form-control" id="CalisanAdi" name="CalisanAdi" type="text" required value="@Model.CalisanAdi" />
+            </div>
+            <label for="CalisanSoyadi" class="control-label col-lg-2">Çalışan Soyadı <span class="required">*</span></label>
+            <div class="col-lg-10">
+                <input class="form-control" id="CalisanSoyadi" name="CalisanSoyadi" type="text" required value="@Model.CalisanSoyadi" />
+            </div>
+            <label for="Telefon" class="control-label col-lg-2">Çalışan Telefonu <span class="required" >*</span></label>
+            <div class="col-lg-10">
+                <input class="form-control" id="Telefon" name="Telefon" type="text" required value="@Model.Telefon" />
+            </div>
+        </div>
+        <div class="form-group ">
+            <label for="Departman" class="control-label col-lg-2">Departman</label>
+            <div class="col-lg-10">
+                @Html.DropDownList("DepartmanId", null, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group ">
+            <label for="Yonetici" class="control-label col-lg-2">Yonetici Id </label>
+            <div class="col-lg-10">
+                @Html.DropDownList("YoneticiId", null, new { @class = "form-control" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-lg-offset-2 col-lg-10">
+                <button class="btn btn-primary" type="submit">Düzenle</button>
+                <button class="btn btn-default" type="button"><a href="/Calisan/Index">İptal</a></button>
+            </div>
+        </div>
+    </form>
+</div>
+

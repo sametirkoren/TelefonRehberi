@@ -1,0 +1,16 @@
+﻿@model Calisan
+@{
+    ViewData["Title"] = "Sil";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>
+    <b>@Model.CalisanAdi @Model.CalisanSoyadi </b> isimli çalışanı silmek istiyor musunuz ? 
+</h2>
+
+<form asp-controller="Calisan" asp-action="Sil" method="post">
+    <input type="hidden" asp-for="CalisanId"/>
+
+    <button type="submit" class="btn btn-primary">Sil</button>
+</form>
+

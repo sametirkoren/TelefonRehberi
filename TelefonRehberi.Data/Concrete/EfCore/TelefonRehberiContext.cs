@@ -17,5 +17,7 @@ namespace TelefonRehberi.Data.Concrete.EfCore
 
         public DbSet<Calisan> Calisanlar { get; set; }
         public DbSet<Departman> Departmanlar { get; set; }
-    }
+
+        public DbSet<Admin> Admin { get; set; }
+    } 
 }

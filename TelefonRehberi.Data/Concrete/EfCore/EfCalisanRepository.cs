@@ -42,7 +42,19 @@ namespace TelefonRehberi.Data.Concrete.EfCore
 
         public void UpdateCalisan(Calisan entity)
         {
-            context.Entry(entity).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            var calisan = GetById(entity.CalisanId);
+
+            if(calisan != null)
+            {
+                calisan.CalisanAdi = entity.CalisanAdi;
+                calisan.CalisanSoyadi = entity.CalisanSoyadi;
+                calisan.Telefon  = entity.Telefon;
+                calisan.DepartmanId = entity.DepartmanId;
+                calisan.YoneticiId = entity.YoneticiId;
+
+                context.SaveChanges();
+            }
+
             context.SaveChanges();
 
         }

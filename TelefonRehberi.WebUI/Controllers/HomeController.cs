@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using TelefonRehberi.Data.Abstract;
-using TelefonRehberi.WebUI.Models;
 
 namespace TelefonRehberi.WebUI.Controllers
 {

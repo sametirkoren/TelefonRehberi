@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TelefonRehberi.Data.Concrete.EfCore;
 
 namespace TelefonRehberi.WebUI.Migrations
 {
     [DbContext(typeof(TelefonRehberiContext))]
-    partial class TelefonRehberiContextModelSnapshot : ModelSnapshot
+    [Migration("20200103165630_AdminCreate")]
+    partial class AdminCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

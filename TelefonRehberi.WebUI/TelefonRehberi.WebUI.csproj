@@ -18,6 +18,10 @@
     <ProjectReference Include="..\TelefonRehberi.Entity\TelefonRehberi.Entity.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
 
 
 </Project>
