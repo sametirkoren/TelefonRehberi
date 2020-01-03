@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Calisan>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+    <div class="container">
+        <div class="row">
+            @if (Model.Count() > 0)
+            {
+                <div class="col-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">Çalışan Id</th>
+                                <th scope="col">Çalışan Ad</th>
+                                <th scope="col">Çalışan Soyad</th>
+                                <th scope="col">Çalışan Telefon</th>
+                                <th scope="col">Detay</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <th scope="row">@item.CalisanId</th>
+                                        <td>@item.CalisanAdi</td>
+                                        <td>@item.CalisanSoyadi</td>
+                                        <td>@item.Telefon</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button>
+
+                                        </td>
+                                    </tr>
+                                }
+                            }
+
+
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="col-12">
+                    <div class="alert alert-danger text-center">
+                        <strong>Çalışan eklenmemiş!</strong> Eklemek için <a href="#">Admin Girişi</a> yapın.
+                    </div>
+                </div>
+                
+            }
+
+        </div>
+    </div>

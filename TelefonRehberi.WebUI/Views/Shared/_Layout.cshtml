@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TelefonRehberi.WebUI</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/lib/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="logo" style="font-weight:bold"><a href="~/Home/Index"><i class="far fa-address-card" style="margin-right : 10px"></i>Telefon Rehberi</a></h1>
+        <ul class="main-nav">
+            <li>
+                <a href="#" class="item">
+                    <i style="margin-right:10px;" class="fas fa-user"></i>
+                    Admin Panel
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <small class="copyright">&copy; Copyright 2020 by Samet İrkören</small>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

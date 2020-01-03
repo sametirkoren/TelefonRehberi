@@ -1,0 +1,8 @@
+C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.Entity\bin\Debug\netcoreapp3.1\TelefonRehberi.Entity.deps.json
+C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.Entity\bin\Debug\netcoreapp3.1\TelefonRehberi.Entity.dll
+C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.Entity\bin\Debug\netcoreapp3.1\TelefonRehberi.Entity.pdb
+C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.Entity\obj\Debug\netcoreapp3.1\TelefonRehberi.Entity.csprojAssemblyReference.cache
+C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.Entity\obj\Debug\netcoreapp3.1\TelefonRehberi.Entity.AssemblyInfoInputs.cache
+C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.Entity\obj\Debug\netcoreapp3.1\TelefonRehberi.Entity.AssemblyInfo.cs
+C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.Entity\obj\Debug\netcoreapp3.1\TelefonRehberi.Entity.dll
+C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.Entity\obj\Debug\netcoreapp3.1\TelefonRehberi.Entity.pdb
