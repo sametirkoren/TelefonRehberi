@@ -1,0 +1,35 @@
+﻿@model Calisan
+@{
+    ViewData["Title"] = "Detay";
+}
+
+
+<!-- contacts card -->
+<div class="card card-default" id="card_contacts">
+    <div id="contacts" class="panel-collapse collapse show" aria-expanded="true" style="">
+        <ul class="list-group pull-down" id="contact-list">
+            <li class="list-group-item">
+                <div class="row w-100">
+                    <div class="col-12 col-sm-6 col-md-3 px-0">
+                        <img src="https://via.placeholder.com/150" alt="@Model.CalisanAdi-@Model.CalisanSoyadi" class="rounded-circle mx-auto d-block img-fluid">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+
+                      
+                        
+                        <label class="name lead"><strong>@Model.CalisanAdi @Model.CalisanSoyadi</strong></label>
+                        <br>
+                    
+                        <span class="text-muted">Departman Adı : <strong>@Model.Departman.DepartmanAdi</strong></span>
+                        <br>
+                        <span style="display:inline-block; margin-top:15px;" class="text-muted">Telefon Numarası : <strong>@Model.Telefon</strong></span>
+                        <br>
+                        <span style="display:inline-block; margin-top:15px;" class="text-muted">Yönetici : <strong>@Model.YoneticiId</strong></span>
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!--/contacts list-->
+    </div>
+</div>

@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using TelefonRehberi.Data.Abstract;
 using TelefonRehberi.WebUI.Models;
@@ -13,20 +14,26 @@ namespace TelefonRehberi.WebUI.Controllers
     public class HomeController : Controller
     {
 
-        private readonly ICalisanRepository calisanRepository;
-
-        public HomeController(ICalisanRepository repository)
+        private readonly ICalisanRepository _calisanRepository;
+        private readonly IDepartmanRepository _departmanRepository;
+        public HomeController(ICalisanRepository calisanRepo , IDepartmanRepository departmanRepo)
         {
-            calisanRepository = repository;
+            _calisanRepository = calisanRepo;
+            _departmanRepository = departmanRepo;
         }
         
 
        
         public IActionResult Index()
         {
-            return View(calisanRepository.GetAll());
+            return View(_calisanRepository.GetAll());
         }
 
-      
+        public IActionResult Detay(int id)
+        {
+            var b = _calisanRepository.GetAll().Where(i => i.CalisanId == id).Include(i => i.Departman).SingleOrDefault();
+
+            return View(b);
+        }
     }
 }
