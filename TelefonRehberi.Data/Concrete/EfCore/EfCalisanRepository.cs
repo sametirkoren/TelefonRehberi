@@ -10,9 +10,11 @@ namespace TelefonRehberi.Data.Concrete.EfCore
     public class EfCalisanRepository : ICalisanRepository
     {
         private readonly TelefonRehberiContext context;
+
         public EfCalisanRepository(TelefonRehberiContext _context)
         {
             context = _context;
+            
         }
         public void AddCalisan(Calisan entity)
         {

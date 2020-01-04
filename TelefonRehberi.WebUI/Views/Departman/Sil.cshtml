@@ -1,0 +1,17 @@
+﻿@model Departman
+@{
+    ViewData["Title"] = "Sil";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h2>
+    <b>@Model.DepartmanAdi </b> isimli departmanı silmek istiyor musunuz ?
+</h2>
+
+<form asp-controller="Departman" asp-action="Sil" method="post">
+    <input type="hidden" asp-for="DepartmanId" />
+
+    <button type="submit" class="btn btn-primary">Sil</button>
+</form>
+

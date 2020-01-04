@@ -43,7 +43,13 @@ namespace TelefonRehberi.Data.Concrete.EfCore
 
         public void UpdateDepartman(Departman entity)
         {
-            context.Entry(entity).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            var departman = GetById(entity.DepartmanId);
+
+            if(departman != null)
+            {
+                departman.DepartmanAdi = entity.DepartmanAdi;
+                context.SaveChanges();
+            }
             context.SaveChanges();
         }
     }

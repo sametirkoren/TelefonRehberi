@@ -8,6 +8,9 @@ namespace TelefonRehberi.Data.Concrete.EfCore
 {
     public class TelefonRehberiContext : DbContext
     {
+        public TelefonRehberiContext()
+        {
+        }
 
         public TelefonRehberiContext(DbContextOptions<TelefonRehberiContext> options)
             :base(options)

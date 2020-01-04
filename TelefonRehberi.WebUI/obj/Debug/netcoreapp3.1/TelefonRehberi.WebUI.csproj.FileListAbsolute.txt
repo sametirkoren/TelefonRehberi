@@ -135,3 +135,8 @@ C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.Web
 C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Calisan\Ekle.cshtml.g.cs
 C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Calisan\Duzenle.cshtml.g.cs
 C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Calisan\Sil.cshtml.g.cs
+C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Login.cshtml.g.cs
+C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Departman\Index.cshtml.g.cs
+C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Departman\Ekle.cshtml.g.cs
+C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Departman\Duzenle.cshtml.g.cs
+C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Departman\Sil.cshtml.g.cs
