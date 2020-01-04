@@ -1,4 +1,11 @@
-﻿
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@{ 
+    if (HttpContextAccessor.HttpContext.Session.GetInt32("AdminId") == null)
+    {
+        Context.Response.Redirect(Url.Content("~/Admin/Login/"));
+    }
+}
 <!doctype html>
 <html lang="en">
 <head>
@@ -38,7 +45,7 @@
        
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
-                <a class="nav-link" href="#">Sign out</a>
+                <a class="nav-link" href="/Admin/Logout/">Çıkış Yap</a>
             </li>
         </ul>
     </nav>
