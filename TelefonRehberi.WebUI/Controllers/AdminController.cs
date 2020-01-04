@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using TelefonRehberi.Data.Abstract;
 using TelefonRehberi.Data.Concrete.EfCore;
 using TelefonRehberi.Entity;
@@ -13,14 +14,23 @@ namespace TelefonRehberi.WebUI.Controllers
     public class AdminController : Controller
     {
         private readonly IAdminRepository _adminRepository;
-        public AdminController(IAdminRepository adminRepository)
+        private readonly ICalisanRepository _calisanRepository;
+        private readonly IDepartmanRepository _departmanRepository;
+        public AdminController(IAdminRepository adminRepository , ICalisanRepository calisanRepository , IDepartmanRepository departmanRepository)
         {
             _adminRepository = adminRepository ;
-            
+            _calisanRepository = calisanRepository;
+            _departmanRepository = departmanRepository;
         }
 
         public IActionResult Index()
         {
+            var calisanSayisi = _calisanRepository.GetAll().Select(i => i.CalisanId);
+            var departmanSayisi = _departmanRepository.GetAll().Select(i => i.DepartmanId);
+            
+            ViewBag.calisanSayisi = calisanSayisi.Count();
+            ViewBag.departmanSayisi = departmanSayisi.Count();
+
             return View();
         }
         

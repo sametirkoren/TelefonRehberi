@@ -4,5 +4,29 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Index</h1>
+<header role="banner">
+   
+</header>
 
+<div class="container-fluid">
+    <div class="row">
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="https://i.hizliresim.com/AOaNNp.png" alt="Card image cap">
+                <div class="card-block">
+                    <h4  class="card-title text-center">Toplam Çalışan Sayısı</h4>
+                    <button class="btn btn-dark btn-lg btn-block">@ViewBag.calisanSayisi</button>
+                   
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://i.hizliresim.com/zGXLOD.png" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title text-center">Toplam Departman Sayısı</h4>
+                    <button class="btn btn-dark btn-lg btn-block">@ViewBag.departmanSayisi</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
