@@ -17,6 +17,7 @@ nupkg/
 *.user
 *.userosscache
 *.sln.docstates
+**/wwwroot/lib
 
 # Build results
 [Dd]ebug/
