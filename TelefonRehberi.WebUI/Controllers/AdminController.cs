@@ -47,7 +47,7 @@ namespace TelefonRehberi.WebUI.Controllers
            if(login == null)
             {
 
-                ViewBag.Uyari = "Kullanıcı Adı veya Şifreniz Hatalı";
+                ViewBag.Hata = "Lütfen Bilgileri Doldurunuz.";
             }
 
            else if(login.Eposta == admin.Eposta && login.Sifre == admin.Sifre)
