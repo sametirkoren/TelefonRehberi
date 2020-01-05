@@ -17,10 +17,13 @@ nupkg/
 *.user
 *.userosscache
 *.sln.docstates
+<<<<<<< HEAD
 **/wwwroot/lib
 wwwroot/lib 
 wwwroot/dist
 
+=======
+>>>>>>> parent of f30995d... /wwwroot/lib gitignore'a alındı.
 
 # Build results
 [Dd]ebug/
