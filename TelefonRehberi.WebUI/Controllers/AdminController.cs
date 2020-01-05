@@ -71,5 +71,27 @@ namespace TelefonRehberi.WebUI.Controllers
             HttpContext.Session.Clear();
             return RedirectToAction("Login", "Admin");
         }
+
+        public IActionResult Adminlistele()
+        {
+            return View(_adminRepository.GetAll());
+        }
+
+        public IActionResult Guncelle(int id)
+        {
+            return View(_adminRepository.GetById(id));
+        }
+        [HttpPost]
+        public IActionResult Guncelle(Admin admin)
+        {
+            if (ModelState.IsValid)
+            {
+                _adminRepository.UpdateAdmin(admin);
+                TempData["message"] = $"{admin.AdminId} numaralı Admin güncellendi.";
+                return RedirectToAction("Adminlistele");
+            }
+          
+            return View(admin);
+        }
     }
 }

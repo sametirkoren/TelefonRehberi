@@ -140,3 +140,6 @@ C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.Web
 C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Departman\Ekle.cshtml.g.cs
 C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Departman\Duzenle.cshtml.g.cs
 C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Departman\Sil.cshtml.g.cs
+C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Admin\BilgileriGuncelle.cshtml.g.cs
+C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Adminlistele.cshtml.g.cs
+C:\Users\vakidev\Documents\TelefonRehberiProje\TelefonRehberi\TelefonRehberi.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Guncelle.cshtml.g.cs
